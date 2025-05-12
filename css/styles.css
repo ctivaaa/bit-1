@@ -1,9 +1,10 @@
  
  :root{
     --second-color:#8c6e4a;
-    --color-degradient: rgba(199, 173, 86, 0.5);
+    --color-degradient: rgba(243, 20, 20, 0.5);
     --color-degradient2: rgb(4, 49, 6);
     --blancos:white;
+    --rojos:rgb(94, 6, 6);
  }
  
  
@@ -12,11 +13,13 @@
 }
 html, body{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 
 
 
@@ -87,15 +90,15 @@ padding: 3rem;
 
 
 
-.btn-section2{
-    border-color: var(--second-color);
-    color: var(--second-color);
-}
+.btn-section2,
 .btn3{
 border-color: var(--blancos);
 color: var(--blancos);
 }
 
+.btn3:hover{
+    background-color: var(--rojos);
+}
 .section2{
     height: 100vh;
 }
@@ -105,6 +108,14 @@ color: var(--blancos);
     background-size: cover; /* o 'contain', 'auto', o un tamaño específico */
     background-repeat: no-repeat; /* Evita que se repita */
     background-position: center; 
+}
+
+.section2{
+       background-image: url(../assets/fondo.png) ;
+background-size: cover; /* o 'contain', 'auto', o un tamaño específico */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center; 
+    z-index: 2;
 }
 
 
@@ -125,8 +136,13 @@ color: var(--blancos);
 }
 
 .sabores{
-    background-color: var(--color-degradient2);
+    background-image: url(../assets/fondo.png);
 }
+#contact{
+        background-image: url(../assets/fondo.png);
+
+}
+
   a{
     text-decoration: none;
     color: black;
